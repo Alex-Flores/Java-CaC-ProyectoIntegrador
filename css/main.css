@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: content-box;
+}
+/* MENU */
+header{
+    height: 90vh;
+    /* CUALQUIER COSA BORRAMOS ESTO */
+    filter: brightness(70%);
+}
+nav{
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo > img{
+    height: 80px;
+    width:  140px;
+}
+.logo > p{
+    font-size: 23px;
+    color: white;
+}
+nav > ul{
+    width: 40%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav > ul > li > a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+}
+nav > ul > li:first-child a{
+    color: white;
+}
+nav > ul > li:last-child a{
+    color: green;
+}
+/* CARRUSEL */
+.titulo{
+    background-image: url("../img/ba1.jpg");
+    height: 90%;
+    background-position: 20%;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-attachment: fixed;
+    /* backdrop-filter: brightness(80%); */
+    /* -webkit-backdrop-filter: brightness(80%); */
+}
+.titulo > div{
+    width: 26rem;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    margin-right: 4rem;
+}
+.titulo > div > p{
+    font-size: 18px;
+}
+.btn > button{
+    background-color: transparent;
+    padding: 8px 18px;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+}
+.btn > button:last-child{
+    margin-top: 2rem;
+    border: 2px solid rgb(50, 169, 50);
+    background-color: rgb(50, 169, 50);
+}
+/* ORADORES */
+.hero{
+    margin: 2rem 0px;
+    height: 38rem;
+    /* background-color: #ccc; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero > div:last-child{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+.hero > div:last-child > .card{
+    height: 100%;
+    width: 20.2%;
+    /* background-color: gray; */
+}
+.hero > div:last-child > .card > img{
+    height: 18rem;
+    width: 18rem;
+}
+.hero > .subtitulo > h3{
+    color: #675c5c;
+}
+.descripcion > div:first-child span{
+    border-radius: 5px;
+    padding: 1px 6px;
+}
+.descripcion > div:first-child span:first-child{
+    background-color: orange;
+}
+.descripcion > div:first-child span:last-child{
+    background-color: rgb(91, 65, 113);
+    color: white;
+}
+.card:last-child > .descripcion > div:first-child span:first-child{
+    background-color: #675c5c;
+    color: white;
+}
+.card:last-child > .descripcion > div:first-child span:last-child{
+    background-color: rgb(148, 44, 3);
+}
+.articulo{
+    height: 60vh;
+    display: flex;
+    background-color: #333;
+}
+.articulo > img{
+    width: 50%;
+}
+.articulo > div{
+    width: 50%;
+    color: white;
+}
+.articulo > div > h2, p{
+    padding: 20px 0px;
+    margin-left: 2rem;
+}
+.articulo > div > button{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 3px 15px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 2rem;
+}
+/* FORMULARIO */
+.formulario{
+    height: 25rem;
+    margin-top: 2rem;
+}
+.subtitulo{
+    text-align: center;
+}
+.formulario > .subtitulo > h3{
+    color: #857373;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario > .subtitulo > h2{
+    color: black;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario > .subtitulo > p{
+    color: #857373;
+}
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form > div{
+    width: 40%;
+}
+form > div > input{
+    border: 2px solid #ccc;
+    width: 15rem;
+    margin: 10px 10px;
+    padding: 6px;
+    border-radius: 3px;
+}
+form > button{
+    width: 34%;
+    background-color: orange;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+}
+/* footer */
+footer{
+    background-color: #393449;
+    height: 5rem;
+    color: white;
+    display: flex;
+}
+footer > ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer > ul > li{
+    width: 5rem;
+}
